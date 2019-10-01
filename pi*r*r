@@ -1,0 +1,17 @@
+#include <stdio.h> //biblioteca
+
+#define pi 3.1426 //resolver pi por radio al cuadrado 
+
+void main()       //define pi=3.1416
+
+{
+float radio, area=0;
+
+print(¨ingrese radio¨);
+scanf(¨%f¨, &radio);
+
+area=pi*radio*radio;
+
+printf(¨el area es:%f¨, area);
+
+    }
