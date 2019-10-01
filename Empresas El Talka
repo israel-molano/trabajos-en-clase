@@ -1,0 +1,52 @@
+#include <stndio.h>
+
+void main()
+
+{
+    char nombre [10],desP1[10].desP2[10];
+    int cedula
+    float cantP1,cantP2,precioP1,precioP2,subtotal=0,iva,total=0,pVta1=0,pVta2=0;
+    
+    
+    printf("Ingrese nombre de cliente: ");
+    scanf("%s",&nombre);
+    
+    printf("Ingrese cédula: ");
+    scanf("%d",&cedula);
+    
+    printf("Datos del producto1\n");
+    printf("Ingrese descripcion: ");
+    scanf("%s",&desP1);
+    
+    printf("Ingrese cantidad: ");
+    scanf("%f",&cantP1);
+    
+    printf("Ingrese precio de producto1");
+    scanf("%f",&precioP1);
+    
+    printf("Datos del producto2\n");
+    printf("Ingrese descripcion: ");
+    scanf("%s",&desP2);
+    
+    printf("Ingrese cantidad: ");
+    scanf("%f",&cantP2);
+    
+    printf("Ingrese precio del producto2");
+    scanf("%f",&precioP2);
+    
+    
+    pVta1=cantP1*precioP1;
+    pVta2=cantP2*precioP2:
+    subtotal=pVta1+pVta2;
+    iva=subtotal*0.12;
+    total=subtotal+iva;
+    
+    
+    printf("**********Empresas El Talka**********\n");
+    printf("cliente: %s\n",nombre);
+    printf("cedula: %s\n",cedula);
+    printf("descripcion\tcantidad\tprecio\tpVenta\n")
+    printf("%s\t\t%.2f\t\t%.2f\t%.2f\n"desP1,cantP1,precioP1,pVta1);
+    printf("%s\t\t%.2f\t\t%.2f\t%.2f\n"desP2,cantP2,precioP2,pVta2);
+    printf("\t\t\t\tsubtotal:%.2f")
+}
