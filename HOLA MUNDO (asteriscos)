@@ -1,0 +1,8 @@
+#include <stdio.h> //inclución de biblioteca
+ 
+ void main()//función principal
+ 
+ {  //imprimir en pantalla en mensage
+    printf("*   *  *****  *     *****        *   *  *   *  *   *  **    *****\n*   *  *   *  *     *   *        ** **  *   *  **  *  *  *  *   *\n*****  *   *  *     *****        * * *  *   *  * * *  *  *  *   *\n*   *  *   *  *     *   *        *   *  *   *  *  **  *  *  *   *\n*   *  *****  ****  *   *        *   *  *****  *   *  **    *****");
+    
+    }
