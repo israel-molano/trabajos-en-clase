@@ -1,0 +1,57 @@
+/******************************************************************************
+
+realizar un programa que contenga un menu con las siguientes opciones:
+
+*******************************************************************************/
+#include <stdio.h>
+#include <math.h>
+
+void main()
+
+{
+    int opcion;
+    float a,b,c,x1=0,x2=0,base,altura,area=0;
+    
+    printf("Menu principal\n1.Ecuacion cuadratica\n2.Area de triangluo");
+    printf("\nEscoja una opcion");
+    scanf("%d",&opcion);
+    
+    switch(opcion)
+    {
+        case 1:
+        {
+            printf("Ingrese coeficiente a: ");
+            scanf("%f",&a);
+            
+            printf("Ingrese coeficiente b: ");
+            scanf("%f",&b);
+            
+            printf("Ingrese coeficiente c: ");
+            scanf("%f",&c);
+            
+            x1=-b+(sqrt(pow(b,2)- 4*a*c))/(2*a);
+            x2=-b-(sqrt(pow(b,2)- 4*a*c))/(2*a);
+            
+            printf("El valor es: %.2f",x1);
+            printf("\nEl valor es: %.2f",x2);
+        }
+        break;
+        
+        case 2:
+        {
+            printf("Ingrese base: ");
+            scanf("%f",&base);
+            
+            printf("Ingrese altura: ");
+            scanf("%f",&altura);
+            
+            area=(base*altura)/2;
+            
+            printf("El area del triangluo es: %.2f",area);
+        }
+        break;
+        
+        default:
+            printf("Opcion invalida");
+    }
+}
