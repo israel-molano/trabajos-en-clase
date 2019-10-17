@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+void main()
+
+{
+    int cont=1,nnum,numeros,suma=0;
+    
+    printf("cuantos numeros va a ingresar: ");
+    scanf("%d",&nnum);
+    
+    while(cont<=nnum)
+    {
+        printf("ingrese numero");
+        scanf("%d",&numeros);
+        
+        suma=suma+numeros;
+        cont++
+    }
+    
+    printf("la suma de %d numeros es %d",nnum,suma);
+}
