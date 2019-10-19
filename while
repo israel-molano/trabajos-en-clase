@@ -1,0 +1,24 @@
+# trabajos-en-clase
+/******************************************************************************
+determine factorial de n numero
+*******************************************************************************/
+#include <stdio.h>
+
+void main()
+
+{
+    int cont=1,numero,resultado=1;
+    
+    printf("ingrese un numero: ");
+    scanf("%d",&numero);
+    
+    while(cont<=numero)
+    {
+        resultado=resultado*cont;
+        
+        
+        
+        cont++;
+    }
+    printf("%d",resultado);
+}
