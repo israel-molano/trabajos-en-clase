@@ -1,0 +1,29 @@
+# trabajos-en-clase
+/******************************************************************************
+
+realize un programa que permita obtener el promedio de un estudiante con n notas
+
+*******************************************************************************/
+#include <stdio.h>
+
+void main()
+{
+   int cant,valor,suma=0,cont=1;
+   float promedio=0;
+   
+   printf("cuantos valores va a ingresar: ");
+   scanf("%d",&cant);
+   
+   while(cont<=cant)
+   {
+       printf("ingrese notas: ");
+       scanf("%d",&valor);
+       
+       suma= (suma+valor);
+       
+       cont++;
+   }
+   promedio= (suma/cant);
+   
+   printf("el primedio es: %.2f",promedio);
+}
