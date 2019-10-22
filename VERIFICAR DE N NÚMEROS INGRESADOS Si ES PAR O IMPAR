@@ -1,0 +1,34 @@
+# trabajos-en-clase
+/******************************************************************************
+
+VERIFICAR DE N NÚMEROS INGRESADOS Si ES PAR O IMPAR
+*******************************************************************************/
+#include <stdio.h>
+
+void main()
+
+{
+    int num=1;
+    
+    while(num>0)
+    {
+        printf("Ingrese un numero: ");
+        scanf("%d",&num);
+        
+        while(num<0)
+        {
+            printf("\nIngrese un numero positivo: ");
+            scanf("%d",&num);
+        }
+        if(num%2==0&&num!=0)
+            
+            printf("\nes par\n\n");
+        
+        else if(num%2==1&&num!=0)
+        
+            printf("\nes impar\n\n");
+    }
+    num++;
+}
+
+
