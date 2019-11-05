@@ -1,0 +1,77 @@
+# trabajos-en-clase
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <stdio.h>
+#include <math.h>
+
+float AreaCirculo(float);
+int factorial(int num);
+int tablaMult(int,int);
+void ParoImpar(int);
+int PosNegCer (int,int);
+// o float AreaCirculo(float radio);
+
+void main()
+{
+    float radio;
+    int num,tabla,mult=0,lim,op;
+    
+   
+  
+    
+    ParoImpar(num);
+    
+    scanf("%d",&op);
+    
+    while(op!=5);
+    
+    switch(op)
+    {
+        case 1:
+        {
+            
+            printf("area del circulo");
+            printf("\nIngrese el radio: ");
+            scanf("%f",&radio);
+    
+            printf("El area del circulo es: %.2f", AreaCirculo(radio));
+        }
+        break;
+        case 2:
+        {
+            printf("\n\nIngrese un numero: ");
+            scanf("%d",&num);
+            printf("\nel factorial es: %d", factorial(num));
+        }
+        break;
+        case 3:
+        {
+             
+            printf("\ningrese tabla de multiplicar: ");
+            scanf("%d",&tabla);
+            printf("'\ngrese el limite: ");
+            scanf("%d",&lim);
+            tablaMult(tabla,lim);
+        }
+        break;
+        case 4:
+        {
+            if(num%2==0)
+                printf("es par\n");
+            else
+                printf("es impar");
+        }
+        break;
+    }
+}
+
+float AreaCirculo(float radio);
+int factorial(int num);
+int tablaMult(int tabla,int lim);
+void ParoImpar(int num);
