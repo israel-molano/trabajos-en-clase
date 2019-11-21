@@ -13,7 +13,7 @@ void datosVector(int);
 void numBuscar(int,int);
 void main()
 {
-    int op=1,arreglo[tam]={5,4,3,2},cantNum,num; //Inicializar el arreglo
+    int op=1,arreglo[tam]={5,4,3,2},cantNum,num; //Inicializar el arreglos
     
     while(op<=2)
     {
